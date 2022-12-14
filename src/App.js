@@ -7,8 +7,8 @@ import CartContainer from "./CartContainer";
 // items
 
 function App() {
-  const { loading } = useGlobalContext();
-  if (loading) {
+  const { isLoading } = useGlobalContext();
+  if (isLoading) {
     return (
       <div className="loading">
         <h1>Loading...</h1>
